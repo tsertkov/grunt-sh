@@ -26,64 +26,60 @@ In your project's Gruntfile, add a section named `sh` to the data object passed 
 grunt.initConfig({
   sh: {
     options: {
-      // Task-specific options go here.
+      // Task-specific child_process.spawn() options go here.
     },
-    your_target: {
-      // Target-specific file lists and/or options go here.
+    your_target1: "echo this is target1 shell command",
+    your_target2: {
+      options: {
+        // Target-specific child_process.spawn() options go here.
+        env: {
+          MY_VAR: "my_value"
+        },
+        cwd: "/home"
+      },
+      cmd: "echo $MY_VAR && pwd"
     },
+    your_target3: "bash"
   },
 });
 ```
 
 ### Options
 
-#### options.separator
+Options are passed unmodified to [exec-sh](https://github.com/tsertkov/exec-sh) which is passing them to [child_process.spawn()](http://nodejs.org/api/child_process.html#child_process_child_process_spawn_command_args_options).
+
+#### options.cwd
 Type: `String`
-Default value: `',  '`
 
-A string value that is used to do something with whatever.
+Current working directory of the child process
 
-#### options.punctuation
-Type: `String`
-Default value: `'.'`
+#### options.stdio
+Type: `Array|String`
 
-A string value that is used to do something else with whatever else.
+Child's stdio configuration.
 
-### Usage Examples
+#### options.env
+Type: `Object`
 
-#### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
+Environment key-value pairs
 
-```js
-grunt.initConfig({
-  sh: {
-    options: {},
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-});
-```
+#### options.detached
+Type: `Boolean`
 
-#### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
+The child will be a process group leader. (See below)
 
-```js
-grunt.initConfig({
-  sh: {
-    options: {
-      separator: ': ',
-      punctuation: ' !!!',
-    },
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-});
-```
+#### options.uid
+Type: `Number`
+
+Sets the user identity of the process. (See setuid(2).)
+
+#### options.gid
+Type: `Number`
+
+Sets the group identity of the process. (See setgid(2).)
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-_(Nothing yet)_
+0.1.0 - Initial release
