@@ -2,7 +2,7 @@
   "name": "grunt-sh",
   "main": "tasks/sh.js",
   "description": "Grunt task for executing commands in a shell.",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "homepage": "https://github.com/tsertkov/grunt-sh",
   "author": {
     "name": "Aleksandr Tsertkov",
@@ -15,10 +15,12 @@
   "bugs": {
     "url": "https://github.com/tsertkov/grunt-sh/issues"
   },
-  "licenses": [{
-    "type": "MIT",
-    "url": "https://github.com/tsertkov/grunt-sh/blob/master/LICENSE-MIT"
-  }],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/tsertkov/grunt-sh/blob/master/LICENSE-MIT"
+    }
+  ],
   "scripts": {
     "test": "grunt"
   },
