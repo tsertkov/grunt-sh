@@ -1,6 +1,12 @@
 # grunt-sh
 
-> Grunt task for executing commands in a shell and attaching to terminal by default.
+Grunt task for executing commands in a shell and attaching to terminal by default.
+
+[![Build Status](https://travis-ci.org/tsertkov/grunt-sh.svg)](https://travis-ci.org/tsertkov/grunt-sh)
+[![NPM version](https://badge.fury.io/js/grunt-sh.png)](http://badge.fury.io/js/grunt-sh)
+[![David Status](https://david-dm.org/tsertkov/grunt-sh.png)](https://david-dm.org/tsertkov/grunt-sh) 
+
+---
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
