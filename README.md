@@ -55,8 +55,9 @@ Current working directory of the child process
 
 #### options.stdio
 Type: `Array|String`
+Default: `inherit`
 
-Child's stdio configuration.
+Child's stdio configuration. By default stdio streams will be forwarded.
 
 #### options.env
 Type: `Object`
@@ -66,7 +67,7 @@ Environment key-value pairs
 #### options.detached
 Type: `Boolean`
 
-The child will be a process group leader. (See below)
+The child will be a process group leader.
 
 #### options.uid
 Type: `Number`
