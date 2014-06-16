@@ -26,9 +26,9 @@ module.exports = function(grunt) {
         options: {
           env: {
             GRUNT_SH: "xxx"
-          },
-          cmd: '[ "$GRUNT_SH" = "xxx" ] && echo OK'
-        }
+          }
+        },
+        cmd: '[ "$GRUNT_SH" = "xxx" ] && echo OK'
       }
     }
   });

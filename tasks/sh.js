@@ -22,8 +22,8 @@ function sh(grunt){
     var config = grunt.config.get("sh." + cmd);
     if (typeof config === "string") {
       cmd = config;
-    } else if (options.cmd) {
-      cmd = options.cmd;
+    } else if (typeof config === "object") {
+      cmd = config.cmd;
     }
 
     args = args.join(" ");
