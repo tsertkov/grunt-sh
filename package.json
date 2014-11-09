@@ -35,6 +35,12 @@
     "grunt": "~0.4.5"
   },
   "keywords": [
-    "gruntplugin sh shell exec execute spawn command"
+    "gruntplugin",
+    "sh",
+    "shell",
+    "exec",
+    "execute",
+    "spawn",
+    "command"
   ]
 }
