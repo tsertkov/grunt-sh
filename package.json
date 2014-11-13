@@ -2,7 +2,7 @@
   "name": "grunt-sh",
   "main": "tasks/sh.js",
   "description": "Grunt task for executing commands in a shell.",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "homepage": "https://github.com/tsertkov/grunt-sh",
   "author": {
     "name": "Aleksandr Tsertkov",
