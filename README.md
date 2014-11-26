@@ -1,19 +1,18 @@
 # grunt-sh
+[![NPM](https://nodei.co/npm/grunt-sh.png)](https://nodei.co/npm/grunt-sh/)
 
-Grunt task for executing commands in a shell and attaching to terminal by default.
-
-[![Build Status](https://travis-ci.org/tsertkov/grunt-sh.svg)](https://travis-ci.org/tsertkov/grunt-sh)
-[![NPM version](https://badge.fury.io/js/grunt-sh.png)](http://badge.fury.io/js/grunt-sh)
+[![Build Status](https://travis-ci.org/tsertkov/grunt-sh.svg?branch=master)](https://travis-ci.org/tsertkov/grunt-sh)
+[![Coverage Status](https://img.shields.io/coveralls/tsertkov/grunt-sh.svg)](https://coveralls.io/r/tsertkov/grunt-sh?branch=master)
 [![David Status](https://david-dm.org/tsertkov/grunt-sh.png)](https://david-dm.org/tsertkov/grunt-sh) 
 
----
+> Grunt task for executing commands in a shell and attaching to terminal by default.
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
-```shell
+```sh
 npm install grunt-sh --save-dev
 ```
 
@@ -85,8 +84,8 @@ Type: `Number`
 
 Sets the group identity of the process. (See setgid(2).)
 
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+## Code Coverage
+Code coverage report for all files is [available here](https://s3.eu-central-1.amazonaws.com/tsertkov-artifacts/grunt-sh/master/coverage/lcov-report/index.html).
 
-## Release History
-0.1.0 - Initial release
+## License
+The MIT License (MIT)
