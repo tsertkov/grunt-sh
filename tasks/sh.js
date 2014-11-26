@@ -20,10 +20,10 @@ function sh(grunt){
 
     // override cmd with the one from config
     var config = grunt.config.get("sh." + cmd);
-    if (typeof config === "string") {
-      cmd = config;
-    } else if (typeof config === "object") {
+    if (typeof config === "object") {
       cmd = config.cmd;
+    } else {
+      cmd = config;
     }
 
     args = args.join(" ");
