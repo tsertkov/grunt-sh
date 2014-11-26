@@ -2,6 +2,7 @@ language: node_js
 node_js:
 - '0.10'
 before_install: npm install -g grunt-cli
+after_success: cat artifacts/coverage/lcov.info | node_modules/coveralls/bin/coveralls.js
 notifications:
   slack:
     secure: UpV0tHu90soWlX6jR1RZlrf232DIVplDl2E4IH2iHVZGhrCCjef9Hlm4O9i3g6HOV+eeZJU4jlouhEURvWIMbWfnWmk4+cwifys6quW6b1iOnjZj58yXIxBMpeleDeV5KMctakyMQmGP7LYV//hhm4ZRbceO0Ww44Y+Gs4NUTbo=
