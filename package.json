@@ -22,14 +22,17 @@
     }
   ],
   "scripts": {
-    "test": "grunt"
+    "test": "npm run cover-test && npm run jshint",
+    "cover-test": "istanbul cover --root tasks --dir artifacts/coverage test/*",
+    "jshint": "jshint tasks/ test/ Gruntfile.js package.json"
   },
   "dependencies": {
     "exec-sh": "^0.2.0"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
-    "grunt-contrib-jshint": "^0.10.0"
+    "istanbul": "^0.3.2",
+    "jshint": "^2.5.10"
   },
   "peerDependencies": {
     "grunt": "~0.4.5"

@@ -8,16 +8,6 @@
 
 module.exports = function(grunt) {
   grunt.initConfig({
-    jshint: {
-      all: [
-        'Gruntfile.js',
-        'tasks/*.js'
-      ],
-      options: {
-        jshintrc: '.jshintrc'
-      }
-    },
-
     // All subtasks here test certan "sh" task functionality
     sh: {
       echo: "echo OK",
@@ -34,6 +24,5 @@ module.exports = function(grunt) {
   });
 
   grunt.loadTasks('tasks');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.registerTask('default', ['jshint', 'sh']);
+  grunt.registerTask('test', ['sh']);
 };
