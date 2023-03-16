@@ -3,7 +3,6 @@
 
 [![Build Status](https://travis-ci.org/tsertkov/grunt-sh.svg?branch=master)](https://travis-ci.org/tsertkov/grunt-sh)
 [![Coverage Status](https://img.shields.io/coveralls/tsertkov/grunt-sh.svg)](https://coveralls.io/r/tsertkov/grunt-sh?branch=master)
-[![David Status](https://david-dm.org/tsertkov/grunt-sh.png)](https://david-dm.org/tsertkov/grunt-sh) 
 
 > Grunt task for executing commands in a shell and attaching to terminal by default.
 
