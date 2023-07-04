@@ -1,9 +1,6 @@
 # grunt-sh
 [![NPM](https://nodei.co/npm/grunt-sh.png)](https://nodei.co/npm/grunt-sh/)
 
-[![Build Status](https://travis-ci.org/tsertkov/grunt-sh.svg?branch=master)](https://travis-ci.org/tsertkov/grunt-sh)
-[![Coverage Status](https://img.shields.io/coveralls/tsertkov/grunt-sh.svg)](https://coveralls.io/r/tsertkov/grunt-sh?branch=master)
-
 > Grunt task for executing commands in a shell and attaching to terminal by default.
 
 ## Getting Started
@@ -82,9 +79,6 @@ Sets the user identity of the process. (See setuid(2).)
 Type: `Number`
 
 Sets the group identity of the process. (See setgid(2).)
-
-## Code Coverage
-Code coverage report for all files is [available here](https://s3.eu-central-1.amazonaws.com/tsertkov-artifacts/grunt-sh/master/coverage/lcov-report/index.html).
 
 ## License
 The MIT License (MIT)
